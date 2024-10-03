@@ -23,6 +23,5 @@ def pascal_triangle(n):
                     row.append(i)
                 else:
                     row.append(6)
-
         pascal.append(row)
     return pascal
