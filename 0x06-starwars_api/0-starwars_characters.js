@@ -23,7 +23,8 @@ function getItem (urls) {
     });
   }
 
-  waitAndGet().then(data => console.log(data)).catch(err => console.log(err));
-
-  getItem(urls.slice(1));
+  waitAndGet().then(data => {
+    console.log(data);
+    getItem(urls.slice(1));
+  });
 }
