@@ -33,4 +33,4 @@ def makeChange(coins, total):
         total -= largest
     if total > 0:
         return -1
-    return len(set(change))
+    return len(change)
