@@ -22,7 +22,7 @@ def makeChange(coins, total):
         coins - (list) the coins we have
         total - (int) the amount we need change for
     """
-    if total == 0:
+    if total <= 0:
         return 0
     change = []
     while (total > 0):
